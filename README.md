@@ -16,7 +16,7 @@ Me aprofundar mais em CSS, HTML e JS para criação de futuros projetos frontend
 
     - [x] Criar HTML
 
-    - [ ] Criar CSS
+    - [x] Criar CSS
 
     - [ ] Criar JavaScript
 
