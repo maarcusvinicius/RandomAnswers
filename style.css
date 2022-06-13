@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
@@ -18,38 +18,52 @@ body {
 }
 
 h1 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    opacity: 0.9;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  opacity: 0.9;
 }
 
 p {
-    margin-bottom: 40px;
-    opacity: 0.7;
+  margin-bottom: 40px;
+  opacity: 0.7;
 }
 
-input, button {
-    display: block;
-    width: 100%;
+input,
+button {
+  display: block;
+  width: 100%;
 
-    padding: 20px;
-    font-size: 20px;
-    border-radius: 4px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 4px;
 }
 
 input {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 button {
-    border: none;
-    color: white;
-    background-color: blueviolet;
+  border: none;
+  color: white;
+  background-color: blueviolet;
 
-    transition: filter .2s;
+  transition: filter 0.2s;
 }
 
-button:hover{
-    filter: brightness(1.2);
-    cursor: pointer;
+button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+#resposta {
+  margin-top: 30px;
+
+  transition: opacity 1s;
+}
+
+#resposta div {
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
