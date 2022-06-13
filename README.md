@@ -18,7 +18,9 @@ Me aprofundar mais em CSS, HTML e JS para criação de futuros projetos frontend
 
     - [x] Criar CSS
 
-    - [ ] Criar JavaScript
+    - [x] Criar JavaScript
+
+    - [ ] Cria projeto adaptado
 
 <h2 id="tecnologias"> 🛠 Tecnologias </h2>
 
