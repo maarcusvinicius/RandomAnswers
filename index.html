@@ -15,8 +15,10 @@
       />
       <h1>Vou revelar seu destino!</h1>
       <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
-      <input type="text" placeholder="Digite sua pergunta" />
-      <button>Fazer Pergunta</button>
+      <input id="inputPergunta" type="text" placeholder="Digite sua pergunta" />
+      <button id="buttonPerguntar" onclick="fazerPergunta()">Fazer Pergunta</button>
+
+      <h3 id="resposta"></h3>
     </div>
 
     <script src="./main.js"></script>
