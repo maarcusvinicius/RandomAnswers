@@ -74,3 +74,10 @@ button:hover {
   opacity: 0.9;
   margin-bottom: 10px;
 }
+
+@media (max-width: 1024px) {
+  
+  #container {
+    margin-top: -40px;
+  }
+}
