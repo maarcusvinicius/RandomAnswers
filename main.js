@@ -18,7 +18,7 @@ const respostas = [
   "Não é possível prever agora.",
   "Perspectiva boa.",
   "As perspectivas não são tão boas.",
-  "Sim.",
+  "Sim!",
   "Concentre-se e pergunte novamente.",
   "Sinais apontam que sim.",
 ]
