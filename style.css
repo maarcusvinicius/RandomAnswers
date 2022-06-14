@@ -80,4 +80,8 @@ button:hover {
   #container {
     margin-top: -40px;
   }
+
+  h1 {
+    font-size: 26px;
+  }
 }
