@@ -1,24 +1,31 @@
 * {
+  z-index: 1;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: black;
+  background-color: #020405;
   color: white;
   text-align: center;
   font-family: sans-serif;
 }
 
 #container {
-  margin-top: 100px;
   width: 80%;
   max-width: 400px;
   margin-inline: auto;
 }
 
+img {
+  margin: auto;
+  display: block;
+
+  width: 200px;
+  z-index: -1;
+}
+
 h1 {
-  margin-top: 40px;
   margin-bottom: 10px;
   opacity: 0.9;
 }
@@ -45,7 +52,7 @@ input {
 button {
   border: none;
   color: white;
-  background-color: blueviolet;
+  background-color: #004e87;
 
   transition: filter 0.2s;
 }
