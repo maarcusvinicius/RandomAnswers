@@ -10,7 +10,7 @@
 
 <h2 id="objetivo">✅ Objetivo </h2>
 
-Me aprofundar mais em CSS, HTML e JS para criação de futuros projetos frontend, Landing Page acessivel e de fácil compreensão!!
+Me aprofundar mais em CSS, HTML e JS para criação de futuros projetos frontend, acessivel e de fácil compreensão!!
 
 <h2 id="roadmap">🐱‍🏍 Roadmap</h2>
 
@@ -20,7 +20,13 @@ Me aprofundar mais em CSS, HTML e JS para criação de futuros projetos frontend
 
     - [x] Criar JavaScript
 
-    - [ ] Cria projeto adaptado
+    - [x] Cria projeto adaptado
+
+<h1 align="center">
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/RandomAnswersImg.png">
+</h1>
+
+Teste você mesmo!!🔎 https://maarcusvinicius.github.io/RandomAnswers/
 
 <h2 id="tecnologias"> 🛠 Tecnologias </h2>
 
@@ -35,7 +41,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <br><br>
 <h4 align="center"> 
-	🚧  Random Answers 🔮 EM CONSTRUÇÃO...  🚧
+	🚧  Random Answers 🔮 FINALIZADO  🚧
 </h4>
 <br>
 <p align="center">Feito com ❤️ por Marcus Vinicius 👋🏽 Entre em contato!</p>
