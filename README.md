@@ -22,6 +22,10 @@ Me aprofundar mais em CSS, HTML e JS para criação de futuros projetos frontend
 
     - [x] Cria projeto adaptado
 
+    - [ ] Adaptar para React JS
+
+    - [ ] Adaptar para React TS
+
 <h1 align="center">
     <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/RandomAnswersImg.png">
 </h1>
