@@ -40,7 +40,7 @@ function App() {
     const pergunta = "<div>" + inputPergunta.value + "</div>"
 
     // gerar numero aletorio
-    const  totalRespostas = respostas.length
+    const totalRespostas = respostas.length
     const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
 
     elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
@@ -63,7 +63,7 @@ function App() {
       />
       <h1>Vou revelar seu destino!</h1>
       <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
-      <input id="inputPergunta" type="text" placeholder="Digite sua pergunta" />
+      <input id="inputPergunta" value={""} type="text" placeholder="Digite sua pergunta" />
       <button id="buttonPerguntar" onClick={fazerPergunta()}>Fazer Pergunta</button>
 
       <h3 id="resposta"></h3>
