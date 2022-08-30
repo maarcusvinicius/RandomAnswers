@@ -1,10 +1,12 @@
-import '../../src/App.css'
-import { respostas } from '../App'
+import '../App.css';
 
 // clicar em fazer pergunta
-export function fazerPergunta() {
-
+export function FazerPer({ respostas }) {
+    const totalRespostas = respostas.length
+    const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
+  
     
-    
-    document.body.innerHTML = JSON.stringify(respostas)
+    return (
+        <h3>{respostas[numeroAleatorio]}</h3>
+    )
 }

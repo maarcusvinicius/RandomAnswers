@@ -2,6 +2,7 @@
   z-index: 1;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -53,6 +54,7 @@ button {
   border: none;
   color: white;
   background-color: #004e87;
+  margin-bottom: 20px;
 
   transition: filter 0.2s;
 }
