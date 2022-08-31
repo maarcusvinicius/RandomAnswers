@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 
 import { FazerPer } from '../src/Components/FazerPer'; 
@@ -25,7 +26,13 @@ function App() {
     "Sinais apontam que sim.",
   ]
 
-  
+  const [showElement, setShowElement] = useState(false)
+  const showOrHide = () => setShowElement(true)
+
+
+  const [qualPergun, setQualPergun] = useState('');
+  const pergunta = qualPergun
+
   return (
     <div className="container">
       <img
@@ -34,25 +41,27 @@ function App() {
       />
 
       <h1>Vou revelar seu destino!</h1>
-      <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
+      <p>Clique em fazer pergunta para que seu <br /> destino seja revelado.</p>
 
 
       <input
         className="inputPergunta"
         type="text"
         placeholder="Digite sua pergunta"
+        onChange={e => setQualPergun(e.target.value)}
       />
 
       <button
         className="buttonPerguntar"
         type="button"
-        // onClick={FazerPer(respostas={respostas})}
+        onClick={showOrHide}
         >
           Fazer Pergunta
       </button>
-      
 
-      <FazerPer respostas={respostas} />
+      {showElement ? <p className='p2'>{pergunta}</p> : null}
+      {showElement ? <FazerPer respostas={respostas} /> : null}
+
     </div>
   )
 }
