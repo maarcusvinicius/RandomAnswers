@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 
 import { FazerPer } from '../src/Components/FazerPer'; 
@@ -26,13 +26,19 @@ function App() {
     "Sinais apontam que sim.",
   ]
 
+
+
   const [showElement, setShowElement] = useState(false)
   const showOrHide = () => setShowElement(true)
+    setTimeout(function() {
+      console.log("opacity");
 
+      showOrHide.style.opacity = 0;
+    }, 4000)
 
-  const [qualPergun, setQualPergun] = useState('');
-  const pergunta = qualPergun
-
+  const [qualPergun, setQualPergun] = useState("");
+  const pergunta = qualPergun;
+  
   return (
     <div className="container">
       <img
@@ -59,9 +65,9 @@ function App() {
           Fazer Pergunta
       </button>
 
-      {showElement ? <p className='p2'>{pergunta}</p> : null}
+      {showElement ? <p className='Ip2'>{pergunta}</p> : null}
       {showElement ? <FazerPer respostas={respostas} /> : null}
-
+      
     </div>
   )
 }

@@ -1,6 +1,5 @@
 import '../App.css';
 
-
 // clicar em fazer pergunta
 export function FazerPer({ respostas }) {
 
