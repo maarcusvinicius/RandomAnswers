@@ -26,21 +26,28 @@ function App() {
     "Sinais apontam que sim.",
   ]
 
-
-
-  const [showElement, setShowElement] = useState(false)
-  const showOrHide = () => setShowElement(true)
-    setTimeout(function() {
-      console.log("opacity");
-
-      showOrHide.style.opacity = 0;
-    }, 4000)
-
+  const [fatorRandomico, setFatorRandomico] = useState();
+  const [showElement, setShowElement] = useState(false);
   const [qualPergun, setQualPergun] = useState("");
-  const pergunta = qualPergun;
+  
+
+
+  const buttonClick = () => {
+    if (qualPergun == "") {
+      return alert('Digite sua pergunta')
+    }
+
+    setFatorRandomico(Math.random());
+    setShowElement(true);
+
+    setTimeout(() => {
+      setShowElement(false);
+    }, 4000)
+  }
+
   
   return (
-    <div className="container">
+    <div className='container'>
       <img
         src="https://static.wixstatic.com/media/5fb0d1_159e06a06085497ab368ce408a7d9661~mv2.gif"
         alt="SpaceExploration"
@@ -51,22 +58,28 @@ function App() {
 
 
       <input
-        className="inputPergunta"
+        className='inputPergunta'
         type="text"
         placeholder="Digite sua pergunta"
         onChange={e => setQualPergun(e.target.value)}
       />
 
       <button
-        className="buttonPerguntar"
+        className='buttonPerguntar'
         type="button"
-        onClick={showOrHide}
+        onClick={buttonClick}
         >
           Fazer Pergunta
       </button>
 
-      {showElement ? <p className='Ip2'>{pergunta}</p> : null}
-      {showElement ? <FazerPer respostas={respostas} /> : null}
+      <div
+        className='blocoPerguntaResposta'
+        style={{
+          opacity: showElement ? 1 : 0
+        }}>
+        <p className='Ip2'>{qualPergun}</p>
+        <FazerPer respostas={respostas} fatorRandomico={fatorRandomico} />
+      </div>
       
     </div>
   )

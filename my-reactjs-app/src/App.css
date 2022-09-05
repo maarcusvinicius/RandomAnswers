@@ -80,6 +80,11 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.blocoPerguntaResposta {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
 @media (max-width: 1024px) {
   
   .container {
