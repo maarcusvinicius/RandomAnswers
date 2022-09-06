@@ -1,79 +1,86 @@
-import './Style.css';
+import { useState } from 'react';
+import './App.css';
 
-type test = {
-  resposta: string;
-}
+import { PergunProps, FazerPer } from '../src/Components/FazerPer'; 
 
 function App() {
-  
-  const elementoResposta = document.querySelector("#resposta")
-  const inputPergunta = document.querySelector("#inputPergunta")
-  const buttonPerguntar = document.querySelector('#buttonPerguntar')
   const respostas = [
-  "Certeza!",
-  "Não tenho tanta certeza.",
-  "É decididamente assim.",
-  "Não conte com isso.",
-  "Sem dúvidas!",
-  "Pergunte novamente mais tarde.",
-  "Sim, definitivamente!",
-  "Minha resposta é não.",
-  "Você pode contar com isso.",
-  "Melhor não te dizer agora.",
-  "A meu ver, sim.",
-  "Minhas fontes dizem não.",
-  "Provavelmente.",
-  "Não é possível prever agora.",
-  "Perspectiva boa.",
-  "As perspectivas não são tão boas.",
-  "Sim!",
-  "Concentre-se e pergunte novamente.",
-  "Sinais apontam que sim.",
+    "Certeza!",
+    "Não tenho tanta certeza.",
+    "É decididamente assim.",
+    "Não conte com isso.",
+    "Sem dúvidas!",
+    "Pergunte novamente mais tarde.",
+    "Sim, definitivamente!",
+    "Minha resposta é não.",
+    "Você pode contar com isso.",
+    "Melhor não te dizer agora.",
+    "A meu ver, sim.",
+    "Minhas fontes dizem não.",
+    "Provavelmente.",
+    "Não é possível prever agora.",
+    "Perspectiva boa.",
+    "As perspectivas não são tão boas.",
+    "Sim!",
+    "Concentre-se e pergunte novamente.",
+    "Sinais apontam que sim.",
   ]
 
-
-  // clicar em fazer pergunta
-  function fazerPergunta(props: test) {
+  const [fatorRandomico, setFatorRandomico] = useState<PergunProps>();
+  const [showElement, setShowElement] = useState(false);
+  const [qualPergun, setQualPergun] = useState("");
   
-    if(inputPergunta.value == "") {
-      alert("Digite sua pergunta")
-      return
+
+
+  const buttonClick = () => {
+    if (qualPergun == "") {
+      return alert('Digite sua pergunta')
     }
 
-    buttonPerguntar.setAttribute("disabled", true)
+    setFatorRandomico(Math.random());
+    setShowElement(true);
 
-    const pergunta = "<div>" + inputPergunta.value + "</div>"
-
-    // gerar numero aletorio
-    const  totalRespostas = respostas.length
-    const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
-
-    elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
-
-    elementoResposta.style.opacity = 1;
-
-    // sumir a resposta depois de 3 segundos
-    setTimeout(function() {
-      elementoResposta.style.opacity = 0;
-      buttonPerguntar.removeAttribute("disabled")
-    }, 3000)
+    setTimeout(() => {
+      setShowElement(false);
+    }, 4000)
   }
 
-
+  
   return (
-    <div id="container">
-
+    <div className='container'>
       <img
         src="https://static.wixstatic.com/media/5fb0d1_159e06a06085497ab368ce408a7d9661~mv2.gif"
         alt="SpaceExploration"
       />
 
       <h1>Vou revelar seu destino!</h1>
-      <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
-      <input id="inputPergunta" placeholder="Digite sua pergunta" />
-      <button id="buttonPerguntar" onClick={fazerPergunta()}>Fazer Pergunta</button>
+      <p>Clique em fazer pergunta para que seu <br /> destino seja revelado.</p>
 
-      <h3 id="resposta"></h3>
+
+      <input
+        className='inputPergunta'
+        type="text"
+        placeholder="Digite sua pergunta"
+        onChange={e => setQualPergun(e.target.value)}
+      />
+
+      <button
+        className='buttonPerguntar'
+        type="button"
+        onClick={buttonClick}
+        >
+          Fazer Pergunta
+      </button>
+
+      <div
+        className='blocoPerguntaResposta'
+        style={{
+          opacity: showElement ? 1 : 0
+        }}>
+        <p className='Ip2'>{qualPergun}</p>
+        <FazerPer respostas={respostas} fatorRandomico={fatorRandomico} />
+      </div>
+      
     </div>
   )
 }
