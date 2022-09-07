@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-import { PergunProps, FazerPer } from '../src/Components/FazerPer'; 
+import { PergunProps, FazerPer } from '../src/Components/FazerPer';
 
 function App() {
   const respostas = [
@@ -26,7 +26,7 @@ function App() {
     "Sinais apontam que sim.",
   ]
 
-  const [fatorRandomico, setFatorRandomico] = useState<PergunProps>();
+  const [fatorRandomico, setFatorRandomico] = useState<PergunProps | any>();
   const [showElement, setShowElement] = useState(false);
   const [qualPergun, setQualPergun] = useState("");
   

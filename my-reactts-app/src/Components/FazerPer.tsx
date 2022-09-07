@@ -1,9 +1,8 @@
 import '../App.css';
 
 export type PergunProps = {
+    respostas: string[];
     fatorRandomico: number;
-    respostas: string;
-    length: number;
 }
 
 // clicar em fazer pergunta
