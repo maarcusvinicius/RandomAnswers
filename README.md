@@ -1,80 +1,115 @@
 <h1 align="center">Random Answers 🔮</h1>
 
-<p align="center">🚀 Perguntas e respostas! Ele irá adivinhar seu futuro!</p>
+<p align="left">🚀 Random Answers is a question and answer project that promises to "guess" the future! 
 
-<p align="center">
- <a href="#objetivo">Objetivo</a> •
- <a href="#roadmap">Roadmap</a> • 
- <a href="#tecnologias">Tecnologias</a> •
- <a href="#React">React</a>
+</br>
+
+This fun application consists of a random answer generator. Just type a question in the input field and click the button below to get a surprising answer. However, it is important to remember that the responses are randomly generated and are not based on any kind of prediction or actual knowledge.
+
 </p>
 
-<h2 id="objetivo">✅ Objetivo </h2>
+<br />
 
-Me aprofundar mais em CSS, HTML, JS, React e Typescript para criação de futuros projetos frontend, acessivel e de fácil compreensão!!
+## 💻 Version 2.0
 
-<h2 id="roadmap">🐱‍🏍 Roadmap</h2>
+<br />
 
-    - [x] Criar HTML
-
-    - [x] Criar CSS
-
-    - [x] Criar JavaScript
-
-    - [x] Cria projeto adaptado
-
-    - [x] Adaptado para React JS
-
-    - [x] Adaptado para React TS
-
-<h1 align="center">
+<div id="layout" align="center">
+  <p align="stretch">
     <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/RandomAnswersImg.png">
-</h1>
-
-Teste você mesmo!!🔎 https://maarcusvinicius.github.io/RandomAnswers/
-
-<h2 id="tecnologias"> 🛠 Tecnologias </h2>
-
-As seguintes ferramentas foram usadas na construção do projeto:
-
-<div align="center">
-  <img align="center" alt="Marcu-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="Marcu-React" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-  <img align="center" alt="Marcu-Ts" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
-  <img align="center" alt="Marcu-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="Marcu-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  </p>
 </div>
 
+<br />
 
-<br><br>
+Test yourself!!🔎 https://maarcusvinicius.github.io/RandomAnswers/
 
-<h1 id="React"> Create React App <img src="https://awesome.re/badge.svg" width="18%" /></h1>
+<br />
 
-<img alt="Logo" align="right" src="https://create-react-app.dev/img/logo.svg" width="20%" />
+## 🎡 Functionalities
 
-Create React apps with no build configuration.
+- Random generation of responses to questions entered by the user
 
-- [Creating an App](https://pt-br.reactjs.org/docs/create-a-new-react-app.html) – How to create a new app.
-- [User Guide](https://pt-br.reactjs.org/tutorial/tutorial.html) – How to develop apps with Create React App.
+- Simple and intuitive interface for easy interaction
 
-<br><br>
+- Works both in the pure HTML/CSS/JS version and in the React version (optional)
 
+<br />
+
+## 🔧 Resources used
+
+This project was developed with the following resources and technologies:
+
+-   [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+-   [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+-   [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [React (opcional)](https://reactjs.org/)
+
+<br />
+
+## 🚀 How to run the project
+
+1. Open the index.html file in your browser for the pure HTML/CSS/JS version.
+
+     - Type your question in the input field.
+     - Click the "Fazer Pergunta" button to generate a random answer.
+
+2. For the React version (if available):
+
+     - Navigate to the project's React folder.
+     - Follow the specific instructions to set up and run the React project.
+
+<br />
+
+## License
+
+<p>
+
+This project is licensed under the [MIT License](https://opensource.org/license/mit/). Feel free to use, modify and distribute it as needed.
+
+</p>
+
+
+<br />
+<br />
+<br />
 <h4 align="center"> 
-	🚧  Random Answers 🔮 FINALIZADO  🚧
+	🚧  Random Answers 🔮 FINISHED  🚧
 </h4>
-<br>
-<p align="center">Feito com ❤️ por Marcus Vinicius 👋🏽 Entre em contato!</p>
+<br />
+<br />
+<br />
+<br />
+<br />
 
-<div align="center">  
-  <a href = "mailto:marcus.editor77@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href = "https://www.linkedin.com/in/marcus-vinicius-507718228/"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-</div>
+Made with ❤️ by Marcus Vinicius 👋🏽 Get in touch!
 
-<br>
-<div align="center">  
-#NextLevel
-#NeverStopLearning
-#NewSkills
-#StepByStep
-#MissionAccomplished
-</div>
+//done readme marcus
+
+
+
+
+
+
+
+
+
+
+
+### 𝐇𝐞𝐥𝐥𝐨 𝐭𝐡𝐞𝐫𝐞, 𝐟𝐞𝐥𝐥𝐨𝐰 <𝚌𝚘𝚍𝚎𝚛𝚜/>! <img width="40" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif">
+
+I'm a Web Developer, a programmer looking to make <br /> a difference in the digital world. [**Personal Site**](https://marcus-dev.vercel.app/) 🚀
+
+#### My current tools
+
+📲 Front-end Mobile with React Native  
+💻 Front-end Web with Reactjs  
+📡 Back-end with Nodejs  
+🔣 Typescript  
+🧰 And more...
+
+#### 💬 Find me elsewhere
+
+[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcus-vinicius-507718228/)](https://www.linkedin.com/in/marcus-vinicius-507718228/)
+[![Gmail Badge](https://img.shields.io/badge/-marcus.editor77@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:marcus.editor77@gmail.com)](marcus.editor77@gmail.com)
